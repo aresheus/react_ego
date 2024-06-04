@@ -1,0 +1,13 @@
+.productList {
+  scroll-margin-top: 250px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 8%;
+  user-select: none;
+}
+

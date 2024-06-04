@@ -1,0 +1,9 @@
+:root {
+  --sugar: #fcf8f0;
+  --linen: #e8dbcd;
+  --coffee-grounds: #393831;
+}
+
+.App {
+  background-color: white;
+}

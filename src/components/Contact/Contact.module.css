@@ -1,0 +1,97 @@
+.contact {
+  scroll-margin-top: 150px;
+  padding-inline: 8%;
+  margin-block: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  user-select: none;
+}
+.contact > h1 {
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.mainArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10rem;
+}
+.form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.inputArea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.inputArea input {
+  width: 100%;
+  border: thin solid rgba(0, 0, 0, 0.2);
+  outline: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.inputTextArea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.inputTextArea textarea {
+  width: 100%;
+  border: thin solid rgba(0, 0, 0, 0.2);
+  outline: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.send_btn {
+  width: 50%;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  background-color: var(--linen);
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.contactImg {
+  flex: 0.5;
+
+  height: 600px;
+}
+
+@media screen and (max-width: 1300px) {
+  .mainArea {
+    display: flex;
+    width: 100%;
+    gap: 5rem;
+    flex-direction: column-reverse;
+  }
+  .form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contactImg {
+    width: 400px;
+
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contactImg {
+    width: 200px;
+
+    height: 400px;
+  }
+}

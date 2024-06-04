@@ -1,0 +1,20 @@
+.about {
+  scroll-margin-top: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-inline: 8%;
+  margin-block: 6rem;
+  text-align: center;
+  gap: 1rem;
+}
+
+.about h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.about p {
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+}
