@@ -1,0 +1,23 @@
+.loading {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 0.2rem solid black;
+  border-top: 0.2rem solid transparent;
+
+  animation: rotate 0.2s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingArea {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

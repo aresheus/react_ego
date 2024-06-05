@@ -10,6 +10,7 @@ import ShopList from "./components/ShopList/ShopList";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import Loading from "./components/Loading/Loading";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -23,11 +24,17 @@ function App() {
 
   const [productsCountInBasket, setProductsCountInBasket] = useState(0);
 
+  const [loading, setLoading] = useState(false);
+
   useEffect(() => {
-    fetchProducts().then((dataProducts) => {
-      setProducts(dataProducts);
-      setProductsCopy(dataProducts);
-    });
+    fetchProducts()
+      .then((dataProducts) => {
+        setProducts(dataProducts);
+        setProductsCopy(dataProducts);
+      })
+      .finally(() => {
+        setLoading(true);
+      });
 
     fetchCategories().then((dataCtaegories) => {
       dataCtaegories.unshift("all");
@@ -92,8 +99,15 @@ function App() {
           <></>
         )}
         <Banner />
-        <Categories productsCopy={productsCopy} />
-        <ProductList />
+        {loading ? (
+          <>
+            <Categories productsCopy={productsCopy} />
+            <ProductList />
+          </>
+        ) : (
+          <Loading />
+        )}
+
         <About />
         <Contact />
         <Footer />
