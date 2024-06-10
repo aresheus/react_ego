@@ -11,6 +11,10 @@
 
 ![img1](src/assets/design/1.png)
 
+1) Desktop 2 :
+
+![img4](src/assets/design/4.png)
+
 2) Mobile:
 
 ![img3](src/assets/design/3.png)
